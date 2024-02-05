@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .logo {
+    height: 4em; /* Adjust height for smaller screens */
+    padding: 1em; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .logo {
+    height: 5em; /* Adjust height for medium screens */
+    padding: 1.25em; /* Adjust padding for medium screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .logo {
+    height: 6em; /* Adjust height for large screens */
+    padding: 1.5em; /* Adjust padding for large screens */
+  }
+}
+
+@media (min-width: 1025px) {
+  .logo {
+    height: 7em; /* Adjust height for extra-large screens */
+    padding: 2em; /* Adjust padding for extra-large screens */
+  }
+}
+
